@@ -17,7 +17,7 @@ Hello, I'am Alexandr Kalendo, working in Vitebsk State Technological College as 
 ## Experience
 In college, I performed various kinds of tasks like: landing page, algorithmic tasks, different operations with data base. For example i have not compleate web project, [hexagon photo gallery](https://github.com/backspacev9/gexagon-landig) on my git.
 
-### *some code her*
+### *Some code her:*
  ```html
  <div class="portfolio">
 		<div class="container">
