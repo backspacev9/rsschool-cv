@@ -3,6 +3,8 @@ body {
     padding: 0;
     margin: 0;
     height: 100%;
+    max-width: 500px;
+    max-height: 700px;
 }
 .header {
     background-position:center;	
@@ -28,23 +30,22 @@ body {
 }
 .info-conteiner1, 
 .info-conteiner2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: relative;
+    margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.90);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     -webkit-transition: 0.3s ease-in-out;
 	transition: 0.3s ease-in-out;
 }
 .info-conteiner1 {
-    margin: -300px 0 0 -400px; 
+    margin-top: -200px;
     height: 400px;
     width: 750px;
     border: 0px solid;
 }
 
 .info-conteiner2 { 
-    margin: 150px 0 0 -615px; 
+    margin-top: 100px;
     width: 1200px;
     height: auto;
     font-size: 18pt;
@@ -57,37 +58,45 @@ body {
 
 .conteinerPhoto, 
 .conteinerInfo{
-   display: inline-block;
-   -webkit-transition: 0.3s ease-in-out;
+    position:relative;
+    display: inline-block;
+    margin: 50px 0 0 50px;
+    -webkit-transition: 0.3s ease-in-out;
 	transition: 0.3s ease-in-out;
 } 
 
 .conteinerPhoto{
-    float: left;
-    margin: 50px 0 0 60px;
     width: 200px;
     height: 300px;   
     border: 0px solid;
  }
 
  .profileImg{
-     height: 100%;
-     width: 100%;
-     object-fit:fill;
+    height: 100%;
+    width: 100%;
+    object-fit:fill;
+
  }
 
  .conteinerInfo {   
-    float: left;
     width: 400px;
     height: 300px;
-    padding: 40px;
 }
 
-.name {
+header h1 {
+    float: left;
     font-family: "Open Sans", sans-serif;
     color: #00000080;
     font-size: 24pt;
-    border-bottom: 1px solid rgb(151, 151, 151);
+    border-bottom: 0px solid rgb(151, 151, 151);
+}
+
+header hr {
+    position: relative;
+    display: block;
+    float: left;
+    width: 70%;
+    size: 1px;
 }
 
 th{
@@ -135,13 +144,24 @@ td {
     transform: scale(1.1);
 }
 
+footer{
+position: relative;
+   left: 0;
+   bottom: 0;
+   height: 80px;
+   width: 100%;
+   background-color: #6baca8;
+   color: white;
+   text-align: center;
+}
+
 @media screen and (max-width: 1165px) {
     .info-conteiner1 {
         width: 800px;
     }
     .info-conteiner2{
         width: 770px;
-        margin: 150px 0 0 -400px; 
+       
     }
 
 }
@@ -150,28 +170,24 @@ td {
     .info-conteiner1 {
         width: 400px;
         height: auto;
-        margin: -400px 0 0 -200px; 
+         
     }
     .info-conteiner2{
         width: 370px;
-        margin: 350px 0 0 -200px;
-    }
-    .conteinerPhoto, 
-    .conteinerInfo{
-        display: block;
-    }
-    .conteinerPhoto{
-       padding-left: 40px;
-    }
-    .conteinerInfo{
-        margin: 30px 0 0 50px;
-        padding: 0;
-    }
 
+    }
+    
     .iconImg{
         width: 25px;
         height: 25px;
        
+    }
+
+    .conteinerPhoto {
+        margin: 50px 0 0 90px;
+    }
+    .conteinerInfo{
+        margin-top:0px
     }
     
 }
