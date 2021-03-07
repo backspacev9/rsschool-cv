@@ -3,8 +3,8 @@ body {
     padding: 0;
     margin: 0;
     height: 100%;
-    max-width: 500px;
-    max-height: 700px;
+    min-width: 500px;
+    min-height: 700px;
 }
 .header {
     background-position:center;	
@@ -13,7 +13,7 @@ body {
     width: 100%;
     background-image: url("img/bgImage.jpg");
     background-repeat: no-repeat;
-     background-attachment: fixed;
+    background-attachment: fixed;
     
 }
 .bgImg {
