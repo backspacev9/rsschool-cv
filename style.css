@@ -75,7 +75,7 @@ h1{
 
 header h1 {
     float: left;
-    font-family: cursive;
+    font-family: 'Open Sans', sans-serif;
     color: #0000008a;
     font-size: 24pt;
     border-bottom: 0px solid rgb(151, 151, 151);
@@ -95,7 +95,7 @@ ul{
 
 li {
     display: block;
-    font-family: cursive;
+    font-family: 'Open Sans', sans-serif;
     font-size: 14pt;
 }
 
@@ -113,12 +113,12 @@ ul:nth-of-type(2) > li {padding-left: 50px;}
 section h3{
     margin-block-start: 0em;
     margin-block-end: 0em;
-    font-family: cursive;
+    font-family: 'Open Sans', sans-serif;
     color: #000000ba;
 }
 
 section p {
-    font-family: cursive;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .iconImg {
