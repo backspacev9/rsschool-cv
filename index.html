@@ -14,7 +14,9 @@
     <header>
       <div class="bgContainer"></div>  
       <div class="info-conteiner1">
-        <div class="conteinerPhoto"><img class="profileImg" src="img/photo.jpg" alt="Alexandr Kalendo"></div>
+        <div class="conteinerPhoto">
+          <img class="profileImg" src="img/photo.jpg" alt="Alexandr Kalendo">
+        </div>
         <div class="conteinerInfo">  
           <article >                
             <h1>Alexandr Kalendo</h1>
@@ -24,12 +26,16 @@
                 <li>AGE</li>
                 <li>FROM</li>
                 <li>E-MAIL</li>
+                <li>ENGLISH LEVEL</li>
+                <li>Education</li>
                 <li>PHONE<li></li>
               </ul>
               <ul>
                 <li>25</li>
                 <li>Belarus, Vitebsk</li>
                 <li>Backspacev9@gmail.com</li>
+                <li>A1(Epam test)</li>
+                <li>Secondary education</li>
                 <li><a href="tel:+375292484494">+375(29)248-44-94</a></li>
               </ul>
             </div>
@@ -37,29 +43,77 @@
         </div>    
       </div>
     </header>
-      <main class="info-conteiner2">
-        <section class="about">
+      <main>
+        <section class="info-conteiner2">
           <h3>About</h3>
           <hr>
           <p>Hello, I’am Alexandr Kalendo, working in Vitebsk State Technological College as System Administrator 2 years. I finished studies in Vitebsk State Technological College as Programmer in 2019, after was drafted into the army.
-          <br>Now I want to recover my programmer skills and in future continue as Web Devoloper.</p>
-        </section>
-        <section class="skills">
+          Now I want to recover my programmer skills and in future continue as Web Devoloper.</p>
+        </section> 
+        <section class="info-conteiner2">
           <h3>Skills & Experience</h3>
-          
-          <nav>            
-            <img class="iconImg" src="img/html.png" alt="html">
-            <img class="iconImg" src="img/css.png" alt="css">
-            <img class="iconImg" src="img/js.png" alt="js">
-            <img class="iconImg" src="img/jquery.png" alt="jquery">
-            <img class="iconImg" src="img/bootstrap.png" alt="bootstrap">
-            <img class="iconImg" src="img/php.png" alt="php">
-            <img class="iconImg" src="img/sql.png" alt="sql">
-            <img class="iconImg" src="img/dotnet.png" alt="dotnet">
-            <img class="iconImg" src="img/java.png" alt="java">
-          </nav>
-        </section>  
-        </main>   
-    <footer></footer>
+          <hr>
+          <p>I have some not compleated web and anroid projects. You can see them on my <a href="https://github.com/backspacev9">Git</a></p>
+          <article>
+            <h4>The first project - gexagon gallary</h4>
+            <p><i>Gexagon realisation:</i></p>
+            <pre>
+              <code>
+              div class="hexPolygon">1 /div 
+              .hexPolygon{
+                -webkit-clip-path:polygon(
+                50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                clip-path: polygon(
+                50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);  
+              }         
+              </code>
+            </pre>
+          </article>
+          <article>
+            <h4>The second project - android palyer</h4>
+            <p><i>Searching music on device realisation:</i></p>
+            <pre>
+              <code>
+                public ArrayList<File> findSongs(File root){
+                  ArrayList<File> al = new ArrayList<File>();
+                  File[] files = root.listFiles();
+                  for (File singleFile : files){
+                    if(singleFile.isDirectory() && !singleFile.isHidden()){
+                      al.addAll(findSongs(singleFile));
+                    }
+                    else{
+                        if (singleFile.getName().endsWith(".mp3")){
+                          al.add(singleFile);
+                        }
+                    }
+                  }
+                  return  al;
+                }    
+              </code>
+            </pre>
+          </article>
+          <article>
+            <h3>Programming lenguages and frameworks I have worked with:</h3>
+              <nav>            
+                <img class="iconImg" src="img/html.png" alt="html">
+                <img class="iconImg" src="img/css.png" alt="css">
+                <img class="iconImg" src="img/js.png" alt="js">
+                <img class="iconImg" src="img/jquery.png" alt="jquery">
+                <img class="iconImg" src="img/bootstrap.png" alt="bootstrap">
+                <img class="iconImg" src="img/php.png" alt="php">
+                <img class="iconImg" src="img/sql.png" alt="sql">
+                <img class="iconImg" src="img/dotnet.png" alt="dotnet">
+                <img class="iconImg" src="img/java.png" alt="java">
+              </nav>
+        </article>
+        </section>
+      </main>   
+    <footer>
+      <ul class="Social">
+        <li><a href="https://discord.gg/UHNUJdkt">Dischord</a> </li>
+        <li><a href="https://github.com/backspacev9">GitHub</a></li>
+        <li><a href="https://vk.com/id61579298">VK</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
